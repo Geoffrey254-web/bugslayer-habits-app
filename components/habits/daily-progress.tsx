@@ -27,13 +27,13 @@ export function DailyProgress() {
             <p className="text-sm text-muted-foreground mb-1">{greeting}</p>
             <h2 className="text-2xl font-bold text-foreground mb-2">
               {allComplete ? (
-                <span className="flex items-center justify-center sm:justify-start gap-2">
-                  <Sparkles className="h-6 w-6 text-amber-500" />
-                  All habits complete!
-                </span>
-              ) : (
-                {"Today's Progress"}
-              )}
+  <span className="flex items-center justify-center sm:justify-start gap-2">
+    <Sparkles className="h-6 w-6 text-amber-500" />
+    All habits complete!
+  </span>
+) : (
+  "Today's Progress"
+)}
             </h2>
             <p className="text-muted-foreground">
               {completed} of {total} habits completed
